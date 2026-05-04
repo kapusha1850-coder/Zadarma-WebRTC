@@ -18,64 +18,67 @@
         white-space: pre;
         color: #fff;
       }
-  </style>
+    </style>
   </head>
   <body>
-    <p>WebRTC виджет Zadarma </p>
-        <pre id="art"></pre>
+    <pre id="art"></pre>
+
     <script>
       const encoded = "4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qKA4qOA4qOg4qCk4qC24qC24qC24qCk4qCk4qOE4qOA4qGA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCACuKggOKggOKggOKggOKggOKggOKggOKggOKggOKjoOKhpOKgmuKgi+KgieKggOKggOKggOKggOKggOKggOKggOKggOKgiOKgieKgs+KipOKhgOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggArioIDioIDioIDioIDioIDioIDioIDio6DioJ/ioIHioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioInioqbioYDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIAK4qCA4qCA4qCA4qCA4qCA4qOg4qCe4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCz4qGE4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCACuKggOKggOKggOKggOKhvOKio+KhtuKggOKggOKggOKggOKggOKjoOKgluKgieKjgOKhtOKgtuKgiuKit+KhhuKggOKggOKggOKggOKggOKggOKggOKggOKiueKhhOKggOKggOKggOKggOKggOKggOKggOKggArioIDioIDiooDio7zioIPiobzioIHioIDioIDioIDio6DioJ7io6HiobTioIvioIHioIDioIDioIDioJjio7/io6fioYDioIDioIDioIDio4fioIDioIDioLjioYfioIDioIDioIDioIDioIDioIDioIDioIAK4qCA4qCA4qO84qGP4qKg4qGH4qCA4qCA4qCA4qO84qOj4qCe4qCD4qCA4qCA4qCA4qOA4qOg4qOk4qOE4qO/4qGH4qKn4qGA4qCA4qCA4qK74qOE4qGA4qCA4qGX4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCACuKggOKggOKiuOKhh+KiuOKhh+KggOKioOKjvOKjv+Kjj+KhgOKggOKggOKioOKivuKgm+KgieKggeKigOKjv+KhieKgm+Kjt+KjhOKggOKiuOKjv+Kgu+KjtuKjp+KggOKggOKggOKggOKggOKggOKggOKggArioIDioIDioJjioYfioIDio4fiobTior/io7/ioYnioInioInioIHioIDioIDioIDio4Dio7bioL7ior/ioZvioJ/iorbio7zioYfioIDiorjiorvioYDio7nio7/ioIDioIDioIDioIDioIDioIDioIDioIAK4qCA4qCA4qCA4qOn4qCA4qK44qGG4qO/4qOb4qCp4qO/4qO34qCA4qCA4qCA4qCA4qCZ4qCJ4qO34qK+4qO/4qGH4qC+4qCA4qK74qCA4qK44qCH4qO94qCb4qK54qGH4qCA4qCA4qCA4qCA4qCA4qCA4qCACuKggOKggOKggOKiuOKhhOKggOKgu+Kjj+Kgm+Kgs+Khv+Kiv+KhnuKggOKggOKggOKggOKggOKgvuKgv+Kgv+Kgh+KghuKggOKggOKjhuKjvOKjseKhh+KggOKgiOKjp+KggOKggOKggOKggOKggOKggOKggArioIDioIDioIDioIDiorPioIDioIDioJnioYTioIDioJnioIniornio7fioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDior/iob/ioIHior/ioYDioIDiorjio4fioIDioIDioIDioIDioIDioIAK4qCA4qCA4qCA4qCA4qCI4qKn4qCA4qCA4qK74qGE4qCA4qCA4qCI4qG34qCC4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qO44qCH4qKw4qCY4qGH4qCA4qCI4qK/4qOG4qCA4qCA4qCA4qCA4qCACuKggOKggOKggOKggOKggOKgiOKit+KhgOKgmOKhn+KgpuKjgOKggOKggOKgkuKgkuKgi+KgieKggeKggOKggOKigOKjoOKghuKggOKjueKggOKjiOKhh+KiueKhhOKggOKguOKjv+KhhOKggOKggOKggOKggArioIDioIDioIDioIDioIDioIDioIDioLHio4Tio7fioIDiorniobPio4TioYDioIDioIDioIDioIDio4DiobTioJrioIHioIDioIDio7/ioIDio5/ior/ioIjioYfioIDioIDio7nio7vioYDioIDioIDioIAK4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qO84qC74qOn4qO/4qCH4qKw4qGN4qCz4qCk4qO04qCb4qCB4qCA4qCA4qCA4qCA4qKw4qO/4qCA4qG/4qK44qCA4qK44qGA4qKA4qO/4qGH4qO/4qCA4qCA4qCACuKggOKggOKggOKggOKggOKggOKggOKjoOKgh+KigOKhvOKgi+KigOKjruKhh+KjgOKgtOKhn+KggOKggOKggOKggOKggOKggOKjv+Kgg+Kgu+KjheKjvOKggOKiuOKhh+KiuOKjueKggOKjv+KggOKggOKggArioIDioIDioIDioIDioIDioIDiooDioI/iooDioZ7iooDio4DiobjioJ/ioIvioIHioJjioIHioIDioIDioIDioIDioIDioIDio7/ioIDioIDioInioLPiooTio7jio6fio6fio5/iobzioInioIDioIDioIAK4qCA4qCA4qCA4qCA4qKA4qGk4qC/4qCk4qCa4qKy4qOf4qOB4qGA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qK74qGA4qGA4qCA4qKA4qOA4qCZ4qCb4qC/4qK+4qOE4qCA4qCA4qCA4qCACuKggOKggOKigOKhtOKgi+KggOKggOKggOKggOKggOKggOKggOKgieKgieKgieKgm+Kgk+KggOKgtOKgkuKgkuKgmuKgkuKgm+Kgm+Kjv+KhieKgieKgieKggOKggOKggOKggOKggOKggOKgmeKiouKhgOKggArioIDioIDio7jioIPioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioLnio7/ioYDioIDioIDioIDioIDioIDioIDioIDioIDioIDior/io4QK4qCA4qK44qK54qCA4qCA4qCA4qKA4qGk4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCZ4qCT4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qK44qO/CuKggOKggOKiuOKggOKggOKigOKjvuKggeKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKjtuKhhOKggOKggOKggOKggOKggOKggOKggOKjvOKgmwrioIDioIDioLjio4fio7DioJ/ioIHioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDiornioYfioIDioIDioIDioIDioIDioIDiooDioY/ioIAK4qCA4qCA4qOw4qCf4qCB4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCI4qK34qCA4qCA4qCA4qCA4qCA4qCA4qO84qCA4qCACuKggOKhnuKggeKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKhtuKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKguOKhh+KggOKggOKggOKggOKjsOKgg+KggOKggArio7ziooPio7TioYPioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDiorjioIPioIDioIDioIDioIDioIDioIDioIDioIDioIDio4DioIDioIDioIDiorPioIDioIDioIDioqDioI/ioIDioIDioIAK4qO/4qCI4qC/4qCH4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qKw4qO54qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qKk4qO24qCA4qCA4qK44qCA4qCA4qCA4qO+4qCA4qCA4qCA4qCACuKiueKhhuKggOKggOKgkOKgiuKggOKggOKggOKggOKggOKggOKggOKggOKgiOKiu+KhgOKggOKggOKggOKggOKggOKggOKggOKjhOKggOKgieKgiOKggOKggOKhvOKggOKggOKisOKhh+KggOKggOKggOKggArioIDioLnio4bioIDioIDioIDioIDioIDioIDioIDioIDioIDiooDioYTioIDioIDiorPioYDioIDioIDioIDioIDioIDioIDioIDioIHioIDioIDioIDio7jioIPioIDioIDio7zioIDioIDioIDioIDioIAK4qCA4qCA4qCI4qCz4qKk4qOA4qOA4qOA4qOA4qOA4qG04qCW4qCL4qCA4qCA4qCA4qCA4qCZ4qCm4qOA4qCA4qCA4qCA4qCA4qCA4qCA4qKA4qOg4qC+4qCB4qCA4qCA4qKw4qGP4qCA4qCA4qCA4qCA4qCACuKggOKggOKggOKggOKggOKjh+Kiu+KgieKgieKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKgiOKgieKgk+KgkuKgkuKgkuKgi+KgieKjv+KggOKggOKggOKggOKjuOKggeKggOKggOKggOKggOKggArioIDioIDioIDioIDioIDior3io7zioIDioIDioITioIDioIDioIDioIDioIDioIDioLLio4TioIDioIDioIDioIDioIDioIDioIDioIDiooDioYfioIDioIDioIDioqDioYfioIDioIDioIDioIDioIDioIAK4qCA4qCA4qCA4qCA4qCA4qK44qO/4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCI4qCz4qOE4qCA4qCA4qCA4qCA4qCA4qCA4qO44qCB4qCA4qCA4qCA4qO44qCB4qCA4qCA4qCA4qCA4qCA4qCACuKggOKggOKggOKggOKggOKjv+Khh+KggOKggOKggOKggOKhh+KggOKggOKggOKggOKggOKggOKgiOKgs+KjhOKggOKggOKggOKggOKhv+KggOKggOKggOKisOKhh+KggOKggOKggOKggOKggOKggOKggArioIDioIDioIDioIDioIDior/io7/ioIDioIDioIDioIDioYfioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDio7DioIPioIDioIDioIDiorjioIPioIDioIDioIDioIDioIDioIDioIAK4qCA4qCA4qCA4qCA4qCA4qK44qK54qCA4qCA4qCA4qCA4qGH4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qKA4qO/4qCA4qCA4qCA4qCA4qK84qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCACuKggOKggOKggOKggOKiuOKhvOKjh+KggOKggOKggOKhh+KggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKimOKjv+KggOKggOKggOKggOKjuOKggOKggOKggOKggOKggOKggOKggOKggArioIDioIDioIDioIDioIDioJjio6fio7/ioIDioIDioIDioYfioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDio7/ioIDioIDioIDioqDioY/ioIDioIDioIDioIDioIDioIDioIDioIAK4qCA4qCA4qCA4qCA4qCA4qCA4qO54qCD4qCA4qCA4qCA4qOn4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qC44qOE4qCA4qCA4qO+4qCD4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCACuKggOKggOKggOKggOKggOKggOKjoOKgh+KigOKhvOKgi+KigOKjv+KhhOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKgiOKipuKjtOKgg+KggOKggOKggOKggOKggOKggOKggOKggOKggArioIDioIDioIDioIDioIDiooDiob7ioIDioIDioIDioIDioIDio73io7/ioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioIDioLPio4TioIDioIDioIDioIDioIDioIDioIDioIDioIAK4qCA4qCA4qCA4qCA4qCA4qG84qCB4qCA4qCA4qCA4qCA4qCI4qC/4qCb4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCA4qCI4qCz4qGE4qCA4qCA4qCA4qCA4qCA4qCA4qCACuKggOKggOKggOKggOKjuOKgh+KggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKggOKgmOKipuKjgOKggOKggOKggOKggOKggA==";
       document.getElementById("art").textContent = new TextDecoder().decode(Uint8Array.from(atob(encoded), c => c.charCodeAt(0)));
     </script>
-    <!--<p>Ключ: <?= apiKey ?></p>-->
-<script>
-  async function requestMicrophoneAccess() {
-  try {
-    const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-    console.log("Микрофон доступен");
-    // Останавливаем треки — виджет сам откроет микрофон когда нужно
-    stream.getTracks().forEach(track => track.stop());
-  } catch (err) {
-    if (err.name === "NotAllowedError") {
-      alert("Доступ к микрофону запрещён. Пожалуйста, разрешите доступ в настройках браузера и обновите страницу.");
-    } else if (err.name === "NotFoundError") {
-      alert("Микрофон не найден. Подключите микрофон и обновите страницу.");
-    } else {
-      alert("Ошибка доступа к микрофону: " + err.message);
-    }
-  }
-}
 
-// Запрашиваем доступ сразу при загрузке страницы
-window.addEventListener("load", requestMicrophoneAccess);
-</script>  
-<script src="https://my.zadarma.com/webphoneWebRTCWidget/v9/js/loader-phone-lib.js?sub_v=1"></script>
-<script src="https://my.zadarma.com/webphoneWebRTCWidget/v9/js/loader-phone-fn.js?sub_v=1"></script>
-<script>
-    if (window.addEventListener) {
-        window.addEventListener('load', function() {
-            zadarmaWidgetFn(
-                '<?= apiKey ?>', 
-                '10197-112', 
-                'square', /*square|rounded*/ 
-                'ru', /*ru, en, es, fr, de, pl, ua*/
-                true, 
-                {right:'10px',bottom:'5px'}
-            );
-        }, false);
-    } else if (window.attachEvent) {
-        window.attachEvent('onload', function(){
-            zadarmaWidgetFn(
-                '<?= apiKey ?>', 
-                '10197-112', 
-                'square', /*square|rounded*/
-                'ru', /*ru, en, es, fr, de, pl, ua*/
-                true, 
-                {right:'10px',bottom:'5px'}
-             );
-        });
-    }
-</script>
+    <script src="https://my.zadarma.com/webphoneWebRTCWidget/v9/js/loader-phone-lib.js?sub_v=1"></script>
+    <script src="https://my.zadarma.com/webphoneWebRTCWidget/v9/js/loader-phone-fn.js?sub_v=1"></script>
+
+    <script>
+      const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyzhYicg86_1HmaTfoY8hFOxnPXlgy2fWVybTGjW0AFRKMUgC5P3pW9BgLxN3OcmV8Etg/exec";
+
+      async function requestMicrophoneAccess() {
+        try {
+          const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
+          console.log("Микрофон доступен");
+          stream.getTracks().forEach(track => track.stop());
+        } catch (err) {
+          if (err.name === "NotAllowedError") {
+            alert("Доступ к микрофону запрещён. Разрешите доступ в настройках браузера и обновите страницу.");
+          } else if (err.name === "NotFoundError") {
+            alert("Микрофон не найден. Подключите микрофон и обновите страницу.");
+          } else {
+            alert("Ошибка доступа к микрофону: " + err.message);
+          }
+        }
+      }
+
+      async function initWidget() {
+        await requestMicrophoneAccess();
+
+        try {
+          const response = await fetch(APPS_SCRIPT_URL);
+          const data = await response.json();
+          const apiKey = data.key;
+
+          if (!apiKey || apiKey.startsWith("Error")) {
+            console.error("Ошибка получения ключа:", apiKey);
+            return;
+          }
+
+          zadarmaWidgetFn(
+            apiKey,
+            '10197-112',
+            'square',
+            'ru',
+            true,
+            {right: '10px', bottom: '5px'}
+          );
+
+        } catch (err) {
+          console.error("Не удалось получить ключ:", err);
+        }
+      }
+
+      window.addEventListener("load", initWidget);
+    </script>
 
   </body>
 </html>
