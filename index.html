@@ -34,22 +34,6 @@
     <script>
       const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyzhYicg86_1HmaTfoY8hFOxnPXlgy2fWVybTGjW0AFRKMUgC5P3pW9BgLxN3OcmV8Etg/exec";
 
-      async function requestMicrophoneAccess() {
-        try {
-          const stream = await navigator.mediaDevices.getUserMedia({ audio: true });
-          console.log("Микрофон доступен");
-          stream.getTracks().forEach(track => track.stop());
-        } catch (err) {
-          if (err.name === "NotAllowedError") {
-            alert("Доступ к микрофону запрещён. Разрешите доступ в настройках браузера и обновите страницу.");
-          } else if (err.name === "NotFoundError") {
-            alert("Микрофон не найден. Подключите микрофон и обновите страницу.");
-          } else {
-            alert("Ошибка доступа к микрофону: " + err.message);
-          }
-        }
-      }
-
       async function initWidget() {
         await requestMicrophoneAccess();
 
