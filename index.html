@@ -35,7 +35,6 @@
       const APPS_SCRIPT_URL = "https://script.google.com/macros/s/AKfycbyzhYicg86_1HmaTfoY8hFOxnPXlgy2fWVybTGjW0AFRKMUgC5P3pW9BgLxN3OcmV8Etg/exec";
 
       async function initWidget() {
-        await requestMicrophoneAccess();
 
         try {
           const response = await fetch(APPS_SCRIPT_URL);
